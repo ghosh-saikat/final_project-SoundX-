@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-SoundX</title>
+
+    <link rel="icon" href="./assets/favicon.png" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <!---Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./output/style.css" />
+  </head>
+  <body>
+    <header class="">
+      <div>
+        <div class="container max-w-[1424px] mx-auto px-[15px]">
+          <nav>
+            <div
+              id="mobile_menu"
+              class="shadow-2xl flex items-center justify-between rounded-3xl mt-[16px] text-[20px] bg-white py-[15px] px-[30px] block max-xl:hidden"
+            >
+              <div class="nav-logo">
+                <a href="#">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="./assets/Frame 1984079443.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="navbar-collapse">
+                <ul class="flex items-center">
+                  <li class="mx-[27px] font-semibold">
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li class="mx-[27px] font-semibold">
+                    <a href="./products.html">Products</a>
+                  </li>
+                  <li class="mx-[27px] font-semibold">
+                    <a href="./aboutus.html">About Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="navbar-collapse flex items-center">
+                  <li class="mx-[11px] font-semibold active text-bluetext">
+                    <a href="./login.html">Login</a>
+                  </li>
+                  <li class="mx-[11px]">
+                    <a href="#">
+                      <img src="./assets/Group 13.png" alt="" />
+                    </a>
+                  </li>
+                  <li class="mx-[11px]">
+                    <a href="#"
+                      ><img src="./assets/iconsax-status-up.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div
+            class="hamburger cursor-pointer rounded-3xl mt-[16px] text-[30px] absolute z-50 right-10 py-[15px] px-[30px] max-xl:block hidden"
+          >
+            <i id="hamburger" class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!---------------------------------------------------banner-section-------------------------------------->
+    <main>
+      <section
+        class="banner-section mt-[76px] pt-[78px] mb-[140px] min-h-[50vh] bg-linear-to-r from-bluetext to-purpletext opacity-30"
+      >
+        <div class="container max-w-[1318px] mx-auto px-[15px]">
+          <div class="text-center text-white">
+            <h1 class="text-[64px] font-poppins fw-semibold">Login</h1>
+            <p class="font-poppins text-[20px]">Home/Login</p>
+          </div>
+        </div>
+      </section>
+
+      <!------------------------------------------------------Login-section------------------------------------->
+      <section class="login-section pb-[108px]">
+        <div class="container max-w-[1320px] mx-auto px-[15px]">
+          <div
+            class="flex items-start justify-center flex-wrap w-[full] mx-[-15px] text-start max-xl:flex-col"
+          >
+            <div
+              class="w-[60%] pl-[15px] max-w-[782px] max-xl:mx-auto max-xl:w-full max-xl:mb-7 max-xl:px-[15px]"
+            >
+              <div class="">
+                <img
+                  src="./products_assets/Rectangle 22.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div
+              class="w-[40%] pr-[15px] max-w-[536px] max-xl:mx-auto max-xl:w-full max-xl:px-[15px]"
+            >
+              <div
+                class="login-form pt-[10px] pr-[50px] pb-[26px] pl-[27px] border-[#F5E5FF] shadow rounded h-full"
+              >
+                <form action="">
+                  <p class="font-poppins text-[28px] fw-medium mb-[15px]">
+                    Login
+                  </p>
+
+                  <p class="font-poppins fw-medium mb-2.5">
+                    Email <span class="text-red-600">*</span>
+                  </p>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="border rounded border-[#F5E5FF] w-full mb-7 p-2.5"
+                  />
+                  <p class="font-poppins fw-medium mb-7">
+                    Password <span class="text-red-600">*</span>
+                  </p>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="border rounded border-[#F5E5FF] w-full mb-7 p-2.5"
+                  />
+                </form>
+
+                <div class="text-center">
+                  <a href="#" class="btn-normal w-full text-center mb-5"
+                    >Login</a
+                  >
+                  <p class="underline mb-2.5">Or</p>
+                  <p class="mb-4">
+                    Don’t have an account?
+                    <span class="text-bluetext ml-2.5"
+                      ><a href="./membership.html">Membership</a></span
+                    >
+                  </p>
+
+                  <p class="max-w-[259px] inline-block text-center underline">
+                    By signing up, you agree to our Terms Of Use and Privacy
+                    Policy
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!----------------------------------------Footer-section-------------------------------->
+    <section
+      class="footer-top pt-[108px] pb-[50px] bg-linear-to-r from-purpletext to-bluetext"
+    >
+      <div class="container max-w-[1293px] mx-auto px-[15px]">
+        <div
+          class="flex items-start justify-around w-full mx-[-15px] text-[white] flex-wrap max-xl:flex-col max-xl:text-center"
+        >
+          <div
+            class="w-[25%] px-[15px] max-w-[286px] max-xl:w-full max-xl:mx-auto"
+          >
+            <ul>
+              <li>
+                <a class="flex items-center justify-start mb-[20px]" href="#">
+                  <img src="./assets/iconsax-location.png" alt="" />
+                  <p class="ml-[5px]">533 South Brown Dr. Marietta, GA 30008</p>
+                </a>
+              </li>
+
+              <li>
+                <a class="flex items-center justify-start mb-[20px]" href="#">
+                  <img src="./assets/Phone.png" alt="" />
+                  <p class="ml-[10px]">000-123-45678</p>
+                </a>
+              </li>
+
+              <li>
+                <a class="flex items-center justify-start mb-[20px]" href="#">
+                  <img src="./assets/EnvelopeSimple.png" alt="" />
+                  <p class="ml-[10px]">support@example.com</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="w-[25%] px-[15px] max-w-[186px] max-xl:w-full max-xl:mx-auto"
+          >
+            <ul>
+              <li class="mb-[24px]">
+                <a href="#"> Information </a>
+              </li>
+              <li class="mb-[24px]">
+                <a href="#">Contact Us</a>
+              </li>
+              <li class="mb-[24px]">
+                <a href="#">Help & FAQ's</a>
+              </li>
+              <li class="mb-[24px]">
+                <a href="#">Working Hours</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="w-[25%] px-[15px] max-w-[234px] max-xl:flex-col max-xl:w-full max-xl:mx-auto"
+          >
+            <ul>
+              <li class="mb-[24px]">
+                <a href="">Support</a>
+              </li>
+
+              <li class="mb-[24px]">
+                <a href="">Order Return</a>
+              </li>
+
+              <li class="mb-[24px]">
+                <a href="">Privacy Policy</a>
+              </li>
+              <li class="mb-[24px]">
+                <a href="">Shipping Details</a>
+              </li>
+              <li class="mb-[24px]">
+                <a href="">Online Payment</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="w-[25%] px-[15px] max-xl:w-full max-w-[424px] max-xl:mx-auto"
+          >
+            <ul>
+              <li>
+                <a class="text-[20px] fw-semibold" href="#">
+                  Sign up and save
+                </a>
+              </li>
+            </ul>
+            <div
+              class="rounded-xl bg-white text-black p-[5px] w-full my-[25px]"
+            >
+              <form action="" class="form">
+                <div class="flex items-center justify-between">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                    class=" "
+                  />
+                  <a
+                    class="bg-black text-white py-[10px] px-[7px] rounded-xl"
+                    href="#"
+                    >Sign Up
+                  </a>
+                </div>
+              </form>
+            </div>
+            <p>
+              Subscribe to get special offers, free giveaways, and
+              once-in-a-lifetime deals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-btm-->
+    <section class="footer-btm bg-[#424242] py-[18px] text-center">
+      <div>
+        <a href="#" class="text-white hover:text-bluetext">
+          © 2025 Designed By Saikat Ghosh
+        </a>
+      </div>
+    </section>
+
+    <!--jQuery-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
