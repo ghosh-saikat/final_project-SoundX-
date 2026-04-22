@@ -26,52 +26,60 @@
   <body>
     <header class="">
       <div>
-        <div class="container max-w-[1424px] mx-auto px-[15px] relative">
-          <nav class="">
-            <div class="nav-logo max-md:absolute md:hidden top-2 z-99">
+        <div
+          class="container max-w-[1424px] mx-auto px-[15px] max-xl:relative z-999"
+        >
+          <nav>
+            <div class="nav-logo max-tablet:block hidden">
               <a href="#">
-                <img src="./assets/Frame 1984079443.png" alt="" />
+                <img
+                  class="object-cover"
+                  src="./assets/Frame 1984079443.png"
+                  alt=""
+                />
               </a>
             </div>
             <div
               id="mobile_menu"
-              class="flex items-center justify-around rounded-3xl mt-[16px] text-[20px] bg-white absolute z-100 left-10 right-10 py-[15px] px-[30px] block max-md:hidden"
+              class="shadow-2xl flex items-center justify-between rounded-3xl max-tablet:absolute max-tablet:top-[60%] max-tablet:left-0 max-tablet:right-0 mt-[16px] text-[20px] bg-white py-[15px] px-[30px] block max-tablet:hidden"
             >
-              <div class="nav-logo max-md:hidden">
+              <div class="nav-logo max-tablet:hidden block">
                 <a href="#">
-                  <img src="./assets/Frame 1984079443.png" alt="" />
+                  <img
+                    class="object-cover"
+                    src="./assets/Frame 1984079443.png"
+                    alt=""
+                  />
                 </a>
               </div>
-              <div class="navbar-collapse max-md:mt-5">
+              <div class="navbar-collapse max-tablet:mt-5">
                 <ul
-                  class="flex items-center justify-center max-md:flex-col flex-row top-0"
+                  class="flex items-center max-tablet:justify-center max-tablet:flex-col"
                 >
-                  <li
-                    class="mx-[27px] active text-bluetext font-semibold max-md:mb-3"
-                  >
+                  <li class="mx-[27px] font-semibold max-tablet:mb-3">
                     <a href="./index.html">Home</a>
                   </li>
-                  <li class="mx-[27px] font-semibold max-md:mb-3">
+                  <li class="mx-[27px] font-semibold active max-tablet:mb-3">
                     <a href="./products.html">Products</a>
                   </li>
-                  <li class="mx-[27px] font-semibold max-md:mb-3">
-                    <a href="aboutus.html">About Us</a>
+                  <li class="mx-[27px] font-semibold max-tablet:mb-3">
+                    <a href="./aboutus.html">About Us</a>
                   </li>
                 </ul>
               </div>
               <div>
                 <ul
-                  class="navbar-collapse flex items-center justify-center max-md:flex-col flex-row"
+                  class="navbar-collapse flex items-center max-tablet:justify-center max-tablet:flex-col"
                 >
-                  <li class="mx-[11px] font-semibold max-md:mb-3">
+                  <li class="mx-[11px] font-semibold max-tablet:mb-3">
                     <a href="./login.html">Login</a>
                   </li>
-                  <li class="mx-[11px] max-md:mb-3">
+                  <li class="mx-[11px] max-tablet:mb-3">
                     <a href="#">
                       <img src="./assets/Group 13.png" alt="" />
                     </a>
                   </li>
-                  <li class="mx-[11px] max-md:mb-3">
+                  <li class="mx-[11px] max-tablet::mb-3">
                     <a href="#"
                       ><img src="./assets/iconsax-status-up.png" alt=""
                     /></a>
@@ -81,13 +89,14 @@
             </div>
           </nav>
           <div
-            class="hamburger cursor-pointer rounded-3xl mt-[16px] text-[30px] max-md:absolute z-500 right-10 py-[15px] px-[30px] max-md:block hidden"
+            class="max-tablet:p-1 hamburger cursor-pointer rounded-3xl mt-[16px] text-[30px] absolute z-50 right-10 py-[15px] px-[30px] max-tablet:block hidden"
           >
             <i id="hamburger" class="fa-solid fa-bars"></i>
           </div>
         </div>
       </div>
     </header>
+
     <!---------------------------------------------------banner-section-------------------------------------->
     <main>
       <section
@@ -95,7 +104,9 @@
       >
         <div class="container max-w-[1318px] mx-auto px-[15px]">
           <div class="text-center text-white">
-            <h1 class="text-[64px] font-poppins fw-semibold">Membership</h1>
+            <h1 class="text-[64px] font-poppins fw-semibold max-md:text-[44px]">
+              Membership
+            </h1>
             <p class="font-poppins text-[20px]">Home/Login/Sign Up</p>
           </div>
         </div>
@@ -108,7 +119,7 @@
             class="flex items-cneter justify-center flex-wrap w-[full] mx-[-15px] max-xl:flex-col"
           >
             <div
-              class="w-[60%] pl-[15px] max-w-[782px] max-xl:mx-auto max-xl:w-full max-xl:mb-8"
+              class="w-[60%] pl-[15px] max-md:px-[15px] max-w-[782px] max-xl:mx-auto max-xl:w-full max-xl:mb-8"
             >
               <div class="w-full h-full object-cover">
                 <img
@@ -119,7 +130,7 @@
               </div>
             </div>
             <div
-              class="w-[40%] pr-[15px] max-w-[536px] max-xl:mx-auto max-xl:w-full"
+              class="w-[40%] pr-[15px] max-w-[536px] max-xl:mx-auto max-xl:w-full max-md:px-[15px]"
             >
               <div
                 class="login-form pt-[10px] pr-[50px] pb-[26px] pl-[27px] border-[#F5E5FF] shadow rounded h-full"
