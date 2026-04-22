@@ -26,44 +26,53 @@
     <header class="">
       <div>
         <div class="container max-w-[1424px] mx-auto px-[15px] relative">
-          <nav>
+          <nav class="">
+            <div
+              class="nav-logo max-tablet:absolute block tablet:hidden top-2 z-99"
+            >
+              <a href="#">
+                <img src="./assets/Frame 1984079443.png" alt="" />
+              </a>
+            </div>
             <div
               id="mobile_menu"
-              class="flex items-center justify-between rounded-3xl mt-[16px] text-[20px] absolute z-50 left-10 right-10 bg-white py-[15px] px-[30px] block max-xl:hidden"
+              class="flex items-center justify-around rounded-3xl mt-[16px] text-[20px] bg-white absolute z-100 left-10 right-10 py-[15px] px-[30px] block max-tablet:hidden"
             >
-              <div class="nav-logo">
+              <div class="nav-logo max-md:hidden">
                 <a href="#">
                   <img src="./assets/Frame 1984079443.png" alt="" />
                 </a>
               </div>
-              <div class="navbar-collapse">
+              <div class="navbar-collapse max-tablet:mt-5">
                 <ul
-                  class="flex items-center justify-center max-xl:flex-col flex-row top-0"
+                  class="flex items-center justify-center max-tablet:flex-col flex-row top-0"
                 >
-                  <li class="mx-[27px] active text-bluetext font-semibold">
+                  <li
+                    class="mx-[27px] active text-bluetext font-semibold max-tablet:mb-3"
+                  >
                     <a href="./index.html">Home</a>
                   </li>
-                  <li class="mx-[27px] font-semibold">
+                  <li class="mx-[27px] font-semibold max-tablet:mb-3">
                     <a href="./products.html">Products</a>
                   </li>
-                  <li class="mx-[27px] font-semibold">
+                  <li class="mx-[27px] font-semibold max-tablet:mb-3">
                     <a href="aboutus.html">About Us</a>
                   </li>
                 </ul>
               </div>
               <div>
                 <ul
-                  class="navbar-collapse flex items-center justify-center max-xl:flex-col flex-row"
+                  class="navbar-collapse flex items-center justify-center max-tablet:flex-col flex-row"
                 >
-                  <li class="mx-[11px] font-semibold">
+                  <li class="mx-[11px] font-semibold max-tablet:mb-3">
                     <a href="./login.html">Login</a>
                   </li>
-                  <li class="mx-[11px]">
+                  <li class="mx-[11px] max-tablet:mb-3">
                     <a href="#">
                       <img src="./assets/Group 13.png" alt="" />
                     </a>
                   </li>
-                  <li class="mx-[11px]">
+                  <li class="mx-[11px] max-tablet:mb-3">
                     <a href="#"
                       ><img src="./assets/iconsax-status-up.png" alt=""
                     /></a>
@@ -73,7 +82,7 @@
             </div>
           </nav>
           <div
-            class="hamburger cursor-pointer rounded-3xl mt-[16px] text-[30px] absolute z-50 right-10 py-[15px] px-[30px] max-xl:block hidden"
+            class="hamburger cursor-pointer rounded-3xl mt-[16px] text-[30px] max-tablet:absolute z-500 right-10 py-[15px] px-[30px] max-tablet:block hidden"
           >
             <i id="hamburger" class="fa-solid fa-bars"></i>
           </div>
@@ -82,7 +91,7 @@
     </header>
 
     <main>
-      <!----------------------------Banner-section--------------------------->
+      <!----------------------------------------------------------------Banner-section------------------------------------------------>
       <section class="banner-section">
         <div class="container max-w-[1424px] mx-auto px-[15px]">
           <div
@@ -110,23 +119,23 @@
 
         <div class="swiper mySwiper relative">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide min-w-full">
               <img
-                class="min-h-screen min-w-screen"
+                class="min-h-screen min-w-screen object-cover"
                 src="./assets/image 19.png"
                 alt=""
               />
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide min-w-full">
               <img
-                class="min-h-screen min-w-screen"
+                class="min-h-screen min-w-screen object-cover"
                 src="./assets/image 20.png"
                 alt=""
               />
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide min-w-full">
               <img
-                class="min-h-screen min-w-screen"
+                class="min-h-screen min-w-screen object-cover"
                 src="./assets/image 21.png"
                 alt=""
               />
@@ -186,7 +195,9 @@
                           Curabitur malesuada elit sed enim placerat vitae
                           interdum.
                         </p>
-                        <p class="text-center">Rs. 4000</p>
+                        <p class="text-center group-hover:text-bluetext">
+                          Rs. 4000
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -229,7 +240,9 @@
                           Curabitur malesuada elit sed enim placerat vitae
                           interdum.
                         </p>
-                        <p class="text-center">Rs. 4000</p>
+                        <p class="text-center group-hover:text-bluetext">
+                          Rs. 4000
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -272,7 +285,9 @@
                           Curabitur malesuada elit sed enim placerat vitae
                           interdum.
                         </p>
-                        <p class="text-center">Rs. 4200</p>
+                        <p class="text-center group-hover:text-bluetext">
+                          Rs. 4200
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -315,7 +330,9 @@
                           Curabitur malesuada elit sed enim placerat vitae
                           interdum.
                         </p>
-                        <p class="text-center">Rs. 4200</p>
+                        <p class="text-center group-hover:text-bluetext">
+                          Rs. 4200
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -449,18 +466,18 @@
                       </a>
                     </div>
                     <div
-                      class="w-[40%] max-w-[440px] px-[15px] max-lg:mt-[30px]"
+                      class="w-[40%] max-w-[440px] px-[15px] max-lg:mt-[30px] max-md:w-full max-md:text-center"
                     >
                       <div class="mt-[10px]">
                         <img
                           id="blue_hdph"
-                          class="object-cover"
+                          class="object-cover w-full"
                           src="./assets/exp-blue.png"
                           alt="Blue-headphone"
                         />
                       </div>
-                      <div
-                        class="flex justify-between items-center flex-wrap mt-[20px]"
+                      <!-- <div
+                        class="flex justify-between items-center flex-wrap mt-[20px] max-md:justify-evenly"
                       >
                         <div class="mt-[10px]">
                           <a href="#" id="blue" class="text-center">
@@ -498,7 +515,7 @@
                             />
                           </a>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -544,17 +561,17 @@
                       </a>
                     </div>
                     <div
-                      class="w-[40%] max-w-[440px] px-[15px] max-lg:mt-[30px]"
+                      class="w-[40%] max-w-[440px] px-[15px] max-lg:mt-[30px] max-md:w-full max-md:text-center"
                     >
                       <div class="mt-[10px]">
                         <img
-                          class="object-cover"
+                          class="object-cover w-full"
                           src="./assets/exp-yellow.png"
                           alt="Blue-headphone"
                         />
                       </div>
-                      <div
-                        class="flex justify-between items-center flex-wrap mt-[20px]"
+                      <!-- <div
+                        class="flex justify-between items-center flex-wrap mt-[20px] max-md:justify-evenly"
                       >
                         <div class="mt-[10px]">
                           <a href="#" class="text-center">
@@ -592,7 +609,7 @@
                             />
                           </a>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -638,17 +655,17 @@
                       </a>
                     </div>
                     <div
-                      class="w-[40%] max-w-[440px] px-[15px] max-lg:mt-[30px]"
+                      class="w-[40%] max-w-[440px] px-[15px] max-lg:mt-[30px] max-md:w-full max-md:text-center"
                     >
                       <div class="mt-[10px]">
                         <img
-                          class="object-cover"
+                          class="object-cover w-full"
                           src="./assets/exp-green.png"
                           alt="Blue-headphone"
                         />
                       </div>
-                      <div
-                        class="flex justify-between items-center flex-wrap mt-[20px]"
+                      <!-- <div
+                        class="flex justify-between items-center flex-wrap mt-[20px] max-md:justify-evenly"
                       >
                         <div class="mt-[10px]">
                           <a href="#" class="text-center">
@@ -686,7 +703,7 @@
                             />
                           </a>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -732,17 +749,17 @@
                       </a>
                     </div>
                     <div
-                      class="w-[40%] max-w-[440px] px-[15px] max-lg:mt-[30px]"
+                      class="w-[40%] max-w-[440px] px-[15px] max-lg:mt-[30px] max-md:w-full max-md:text-center"
                     >
                       <div class="mt-[10px]">
                         <img
-                          class="object-cover"
+                          class="object-cover w-full"
                           src="./assets/exp-red.png"
                           alt="Blue-headphone"
                         />
                       </div>
-                      <div
-                        class="flex justify-between items-center flex-wrap mt-[20px]"
+                      <!-- <div
+                        class="flex justify-between items-center flex-wrap mt-[20px] max-md:w-full max-md:text-center max-md:justify-evenly"
                       >
                         <div class="mt-[10px]">
                           <a href="#" class="text-center">
@@ -780,7 +797,7 @@
                             />
                           </a>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
@@ -794,7 +811,7 @@
       <section class="learn-more-section pt-[108px]">
         <div class="container max-w-[1320px] mx-auto px-[15px]">
           <div
-            class="flex items-center justify-center flex-wrap mx-[-15px] w-full max-lg:flex-col"
+            class="flex items-center justify-center flex-wrap mx-[-15px] w-full max-lg:flex-col mx-auto"
           >
             <div
               class="w-[40%] px-[15px] max-w-[424px] mb-[30px] max-lg:w-full max-lg:text-center"
@@ -847,7 +864,7 @@
       <section class="shop-now2-section pt-[108px]">
         <div class="container max-w-[1265px] mx-auto px-[15px]">
           <div
-            class="flex items-center justify-center flex-wrap w-full mx-[-15px] max-lg:flex-row-reverse"
+            class="flex items-center justify-center flex-wrap w-full mx-[-15px] max-lg:flex-row-reverse mx-auto"
           >
             <div
               class="w-[60%] px-[15px] mb-[30px] max-lg:flex-col max-lg:w-full"
@@ -881,11 +898,13 @@
       <!----------------------------------------------Review-section---------------------------------->
 
       <section class="review-section pt-[108px]">
-        <div class="container max-w-[1322px] mx-auto px-[15px]">
+        <div class="container max-w-[1322px] mx-auto px-[15px] w-full">
           <div
-            class="flex items-center justify-center flex-wrap mx-[-15px] w-full"
+            class="flex items-center justify-center flex-wrap mx-[-15px] w-full mx-auto"
           >
-            <div class="w-[50%] px-[15px] max-md:w-full mb-[30px]">
+            <div
+              class="w-[50%] px-[15px] max-md:w-full mb-[30px] max-md:mx-auto"
+            >
               <div class="max-md:text-center">
                 <h2 class="text-subheading max-md:text-[28px]">
                   Our Customers Review
@@ -1125,9 +1144,11 @@
 
       <section class="tc-section pt-[108px]">
         <div class="container max-w-[1320px] mx-auto px-[15px]">
-          <div class="flex justify-evenly items-center max-xl:flex-wrap">
+          <div
+            class="flex justify-evenly items-center max-xl:flex-wrap mx-auto"
+          >
             <div
-              class="max-w-[312px] bg-[#F4F2FF] py-[35px] px-[40px] rounded-bl-[90px] ml-[24px] mb-[30px]"
+              class="max-w-[312px] bg-[#F4F2FF] py-[35px] px-[40px] rounded-bl-[90px] ml-[24px] max-md:ml-0 mb-[30px]"
             >
               <div class="text-center">
                 <img
@@ -1141,7 +1162,7 @@
             </div>
 
             <div
-              class="max-w-[312px] bg-[#F4F2FF] py-[35px] px-[40px] ml-[24px] mb-[30px]"
+              class="max-w-[312px] bg-[#F4F2FF] py-[35px] px-[40px] ml-[24px] mb-[30px] max-md:ml-0"
             >
               <div class="text-center">
                 <img
@@ -1154,7 +1175,7 @@
               </div>
             </div>
             <div
-              class="max-w-[312px] bg-[#F4F2FF] py-[35px] px-[40px] ml-[24px] mb-[30px]"
+              class="max-w-[312px] bg-[#F4F2FF] py-[35px] px-[40px] ml-[24px] mb-[30px] max-md:ml-0"
             >
               <div class="text-center">
                 <img
@@ -1167,7 +1188,7 @@
               </div>
             </div>
             <div
-              class="max-w-[312px] bg-[#F4F2FF] py-[35px] px-[40px] rounded-tr-[90px] ml-[24px] mb-[30px]"
+              class="max-w-[312px] bg-[#F4F2FF] py-[35px] px-[40px] rounded-tr-[90px] ml-[24px] mb-[30px] max-md:ml-0"
             >
               <div class="text-center">
                 <img
@@ -1190,7 +1211,7 @@
     >
       <div class="container max-w-[1293px] mx-auto px-[15px]">
         <div
-          class="flex items-start justify-around w-full mx-[-15px] text-[white] flex-wrap max-xl:flex-col max-xl:text-center"
+          class="flex items-start justify-around w-full mx-[-15px] text-[white] flex-wrap max-xl:flex-col max-xl:text-center mx-auto"
         >
           <div
             class="w-[25%] px-[15px] max-w-[286px] max-xl:w-full max-xl:mx-auto"

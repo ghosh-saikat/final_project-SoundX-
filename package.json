@@ -15,5 +15,13 @@
     "@tailwindcss/cli": "^4.2.2",
     "tailwindcss": "^4.2.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghosh-saikat/final_project-SoundX-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ghosh-saikat/final_project-SoundX-/issues"
+  },
+  "homepage": "https://github.com/ghosh-saikat/final_project-SoundX-#readme"
 }

@@ -18,6 +18,9 @@
   --bg-wireless_headset: url("../products_assets/banner_wireless_headset.png");
 
   --bg-banner_aboutus: url("../products_assets/banner_wireless_headset.png");
+
+  --breakpoint-tablet: 51.4375rem;
+  /* 823px */
 }
 
 @layer base {
@@ -33,6 +36,140 @@
 }
 
 @layer components {
+  .firstHover {
+    /* overflow-x-hidden relative hover:scale-x-150 hover:translate-x-[25%] hover:duration-300 hover:ease-out   */
+    overflow: hidden !important;
+  }
+
+  .firstbutton {
+    opacity: 0 !important;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    /* z-index: 999; */
+
+    /* pointer-events: none; */
+  }
+
+  .first:hover .firstHover {
+    transform-origin: center left;
+    transform: scaleX(150%);
+    transition: 0.5s;
+  }
+
+  .first:hover .firstbutton {
+    opacity: 1 !important;
+  }
+
+  .firstHover:hover ~ .firstbutton {
+    /* pointer-events: auto; */
+  }
+
+  .secondbutton {
+    opacity: 0 !important;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+  }
+  .second:hover .btmHover {
+    transform-origin: center bottom;
+    transition: 0.5s;
+    transform: scaleY(204%);
+  }
+  .second:hover .secondbutton {
+    opacity: 1 !important;
+  }
+
+  .blackhead:hover {
+    transform-origin: top center;
+    transform: scaleY(260%);
+
+    transition: 0.5s;
+    /* overflow: hidden; */
+  }
+
+  .thirdbutton {
+    opacity: 0;
+    position: absolute;
+    top: 210%;
+    left: 5%;
+  }
+
+  .third:hover .blackhead {
+    transform-origin: top center;
+    transform: scaleY(260%);
+
+    transition: 0.5s;
+  }
+
+  .third:hover .thirdbutton {
+    transition: 0.5s;
+    opacity: 1 !important;
+  }
+  .whiteOverhead:hover {
+    transition: 0.5s;
+    transform: scaleX(223%);
+    transform-origin: center left;
+  }
+  .fourthbutton {
+    opacity: 0;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+  }
+  .fourth:hover .whiteOverhead {
+    transition: 0.5s;
+    transform: scaleX(223%);
+    transform-origin: center left;
+  }
+  .fourth:hover .fourthbutton {
+    transition: 0.5s;
+    opacity: 1 !important;
+  }
+
+  .fifthbutton {
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    left: -90%;
+    bottom: 10%;
+  }
+
+  .fifth:hover .fifthHover {
+    transition: 0.5s;
+    transform-origin: center right;
+    transform: scaleX(193%);
+  }
+  .fifth:hover .fifthbutton {
+    opacity: 1 !important;
+    transition: 0.5s;
+  }
+
+  .sixthbutton {
+    opacity: 0;
+    position: absolute;
+    left: -90%;
+    bottom: 10%;
+  }
+
+  .sixthHover:hover {
+    transition: 0.5s;
+    transform-origin: center right;
+    transform: scaleX(193%);
+    /* overflow-x: hidden; */
+    /* transform-style: inherit; */
+  }
+
+  .sixth:hover .sixthbutton {
+    opacity: 1 !important;
+  }
+
+  /* .about-coloum:hover ~ .firstHover {
+    transform-origin: center top;
+    transform: scaleY(50%);
+  } */
+
+  /*----------------------------------------------------------------------------------------*/
   .text-subheading {
     font-size: 38px;
     font-weight: 600;

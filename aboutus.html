@@ -26,45 +26,60 @@
   <body>
     <header class="">
       <div>
-        <div class="container max-w-[1424px] mx-auto px-[15px]">
+        <div class="container max-w-[1424px] mx-auto px-[15px] max-xl:relative">
           <nav>
+            <div class="nav-logo max-tablet:block hidden">
+              <a href="#">
+                <img
+                  class="object-cover"
+                  src="./assets/Frame 1984079443.png"
+                  alt=""
+                />
+              </a>
+            </div>
             <div
               id="mobile_menu"
-              class="shadow-2xl flex items-center justify-between rounded-3xl mt-[16px] text-[20px] bg-white py-[15px] px-[30px] block max-xl:hidden"
+              class="shadow-2xl flex items-center justify-between rounded-3xl max-tablet:absolute max-tablet:top-[60%] max-tablet:left-0 max-tablet:right-0 mt-[16px] text-[20px] bg-white py-[15px] px-[30px] block max-tablet:hidden"
             >
-              <div class="nav-logo">
+              <div class="nav-logo max-tablet:hidden block">
                 <a href="#">
                   <img
-                    class="w-full h-full object-cover"
+                    class="object-cover"
                     src="./assets/Frame 1984079443.png"
                     alt=""
                   />
                 </a>
               </div>
-              <div class="navbar-collapse">
-                <ul class="flex items-center">
-                  <li class="mx-[27px] font-semibold">
+              <div class="navbar-collapse max-tablet:mt-5">
+                <ul
+                  class="flex items-center max-tablet:justify-center max-tablet:flex-col"
+                >
+                  <li class="mx-[27px] font-semibold max-tablet:mb-3">
                     <a href="./index.html">Home</a>
                   </li>
-                  <li class="mx-[27px] font-semibold">
+                  <li class="mx-[27px] font-semibold active max-tablet:mb-3">
                     <a href="./products.html">Products</a>
                   </li>
-                  <li class="mx-[27px] font-semibold active text-bluetext">
+                  <li
+                    class="mx-[27px] font-semibold max-tablet:mb-3 text-bluetext"
+                  >
                     <a href="./aboutus.html">About Us</a>
                   </li>
                 </ul>
               </div>
               <div>
-                <ul class="navbar-collapse flex items-center">
-                  <li class="mx-[11px] font-semibold">
+                <ul
+                  class="navbar-collapse flex items-center max-tablet:justify-center max-tablet:flex-col"
+                >
+                  <li class="mx-[11px] font-semibold max-tablet:mb-3">
                     <a href="./login.html">Login</a>
                   </li>
-                  <li class="mx-[11px]">
+                  <li class="mx-[11px] max-md:tablet-3">
                     <a href="#">
                       <img src="./assets/Group 13.png" alt="" />
                     </a>
                   </li>
-                  <li class="mx-[11px]">
+                  <li class="mx-[11px] max-md:tablet-3">
                     <a href="#"
                       ><img src="./assets/iconsax-status-up.png" alt=""
                     /></a>
@@ -74,7 +89,7 @@
             </div>
           </nav>
           <div
-            class="hamburger cursor-pointer rounded-3xl mt-[16px] text-[30px] absolute z-50 right-10 py-[15px] px-[30px] max-xl:block hidden"
+            class="max-tablet:p-1 hamburger cursor-pointer rounded-3xl mt-[16px] text-[30px] absolute z-50 right-10 py-[15px] px-[30px] max-tablet:block hidden"
           >
             <i id="hamburger" class="fa-solid fa-bars"></i>
           </div>
@@ -171,55 +186,118 @@
             class="flex items-start justify-center flex-wrap w-[full] mx-[-15px] text-start max-xl:flex-col"
           >
             <div
-              class="w-[50%] px-[15px] max-w-[389px] max-xl:mx-auto max-xl:w-full max-w-[648px] max-xl:mb-4"
+              class="about-coloum w-[50%] px-[15px] max-xl:mx-auto max-xl:w-full max-w-[648px] max-xl:mb-4"
             >
-              <div>
-                <img
-                  class="object-cover w-full h-full rounded-lg mb-4"
-                  src="./products_assets/Rectangle 1.png"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  src="./products_assets/Frame 1984079506.png"
-                  alt=""
-                  class="object-cover w-full h-full rounded-lg"
-                />
-              </div>
-            </div>
-            <div
-              class="w-[50%] px-[15px] max-w-[389px] max-xl:mx-auto max-xl:w-full max-w-[648px]"
-            >
-              <div>
-                <img
-                  src="./products_assets/Frame 1984079504.png"
-                  class="object-cover w-full h-full rounded-lg mb-4"
-                  alt=""
-                />
-              </div>
-              <div class="flex">
-                <div>
+              <div class="first relative z-100">
+                <div class="firstHover">
                   <img
-                    src="./products_assets/Frame 1984079509.png"
+                    class="object-cover w-full h-full rounded-lg mb-4"
+                    src="./products_assets/Rectangle 1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="firstbutton">
+                  <a
+                    href="#"
+                    class="btn-color hover:bg-none hover:bg-[#424242] bg-linear-to-r from-bluetext to-purpletext"
+                  >
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+
+              <div class="second relative z-200">
+                <div class="btmHover">
+                  <img
+                    src="./products_assets/Frame 1984079506.png"
                     alt=""
                     class="object-cover w-full h-full rounded-lg"
                   />
                 </div>
-                <div class="ml-5">
-                  <div>
+                <div class="secondbutton">
+                  <a
+                    href="#"
+                    class="btn-color hover:bg-none hover:bg-[#424242] bg-linear-to-r from-bluetext to-purpletext"
+                  >
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[50%] px-[15px] max-xl:mx-auto max-xl:w-full max-w-[648px]"
+            >
+              <div class="third relative z-4">
+                <div class="blackhead">
+                  <img
+                    src="./products_assets/Frame 1984079504.png"
+                    class="object-cover w-full h-full rounded-lg mb-4"
+                    alt=""
+                  />
+                </div>
+                <div class="thirdbutton">
+                  <a
+                    href="#"
+                    class="btn-color hover:bg-none hover:bg-[#424242] bg-linear-to-r from-bluetext to-purpletext"
+                  >
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex relative">
+                <div class="fourth">
+                  <div class="whiteOverhead">
                     <img
-                      src="./products_assets/Frame 1984079541.png"
-                      alt=""
-                      class="object-cover w-full h-full rounded-lg mb-4"
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="./products_assets/Frame 1984079508.png"
+                      src="./products_assets/Frame 1984079509.png"
                       alt=""
                       class="object-cover w-full h-full rounded-lg"
                     />
+                  </div>
+                  <div class="fourthbutton">
+                    <a
+                      href="#"
+                      class="btn-color hover:bg-none hover:bg-[#424242] bg-linear-to-r from-bluetext to-purpletext"
+                    >
+                      Shop Now
+                    </a>
+                  </div>
+                </div>
+
+                <div class="ml-5">
+                  <div class="fifth relative">
+                    <div class="fifthHover">
+                      <img
+                        src="./products_assets/Frame 1984079541.png"
+                        alt=""
+                        class="object-cover w-full h-full rounded-lg mb-4"
+                      />
+                    </div>
+                    <div class="fifthbutton">
+                      <a
+                        href="#"
+                        class="btn-color hover:bg-none hover:bg-[#424242] bg-linear-to-r from-bluetext to-purpletext"
+                      >
+                        Shop Now
+                      </a>
+                    </div>
+                  </div>
+                  <div class="sixth relative">
+                    <div class="sixthHover">
+                      <img
+                        src="./products_assets/Frame 1984079508.png"
+                        alt=""
+                        class="object-cover w-full h-full rounded-lg"
+                      />
+                    </div>
+                    <div class="sixthbutton">
+                      <a
+                        href="#"
+                        class="btn-color hover:bg-none hover:bg-[#424242] bg-linear-to-r from-bluetext to-purpletext"
+                      >
+                        Shop Now
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
